@@ -30,7 +30,6 @@ define([
     it('should count from start number to end number, one per 1/10th of a second', function (done) {
       this.timeout(600);
       answers.count(1, 5);
-
       setTimeout(function () {
         expect(nums.length > 1).to.be.ok;
         expect(nums.length < 5).to.be.ok;
@@ -49,7 +48,6 @@ define([
 
       var counter = answers.count(1, 5);
       counter.cancel();
-
       setTimeout(function () {
         expect(nums.length < 5).to.be.ok;
         done();

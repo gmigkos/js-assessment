@@ -28,6 +28,5 @@ define([
       expect(answers.identity(1, 1)).to.eql(true);
       expect(answers.identity(0, false)).to.eql(false);
     });
-
   });
 });
